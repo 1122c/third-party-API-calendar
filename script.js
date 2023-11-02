@@ -3,7 +3,7 @@
 // in the html.
 
 $(function () {
-  $("#currentDay").text(dayjs().format("MMMM D, YYY"));
+  $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
   $(".time-block").each(function () {
     const hour = parseInt($(this).attr("id").split("_")[1]);
     const currentHour = dayjs().hour();
