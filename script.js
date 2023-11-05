@@ -5,7 +5,7 @@
 $(function () {
   $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
   $(".time-block").each(function () {
-    const hour = parseInt($(this).attr("id").split("_")[1]);
+    const hour = parseInt($(this).attr("id").split("-")[1]);
     const currentHour = dayjs().hour();
     $(this).removeClass("past present future");
     if (hour < currentHour) {
